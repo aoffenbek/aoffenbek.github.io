@@ -37,3 +37,35 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+.skill-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  margin: 2px 3px 2px 0;
+}
