@@ -1,71 +1,128 @@
+/* =========================
+   Global Styles
+   ========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
+/* =========================
+   Header & Navigation
+   ========================= */
 header {
   background-color: #333;
-  color: white;
-  padding: 1rem;
+  color: #fff;
+  padding: 1.2rem 1rem;
   text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
 }
 
 nav a {
   margin: 0 1rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* =========================
+   Main Content
+   ========================= */
 main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-footer {
-  background-color: #eee;
+main h2 {
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-bottom: 2rem;
 }
 
+/* =========================
+   Project Cards
+   ========================= */
+.project,
 .project-card {
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-  background-color: #fff;
+  padding: 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.project:hover,
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+.project h3,
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project a,
 .project-card a {
   display: inline-block;
-  margin-right: 10px;
+  margin-top: 10px;
   color: #1d4ed8;
   text-decoration: none;
   font-weight: 500;
 }
+
+.project a:hover,
 .project-card a:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   Skill Badges
+   ========================= */
 .skill-badge {
   display: inline-block;
   background-color: #e0f2fe;
   color: #0369a1;
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 6px;
   font-size: 0.85em;
-  margin: 2px 3px 2px 0;
+  margin: 4px 6px 4px 0;
 }
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Responsive Adjustments
+   ========================= */
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 0.3rem 0.6rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
+
